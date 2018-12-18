@@ -1,5 +1,5 @@
-const HOST = '192.168.1.111';
-const PORT = '3008';
+const HOST = '54.223.81.116';
+const PORT = '3001';
 const DOMEA = `http://${HOST}:${PORT}/api/v1`;
 const apiConfig = {
     modelList: `${DOMEA}/models.json`,
