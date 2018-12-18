@@ -1,0 +1,36 @@
+<!-- <ion-list> -->
+  <div *ngFor="let model of models" class="item" >
+    <div class="item-content">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>{{model.time | date:"y/M/d"}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        {{model.description}}
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <div class="item-fab" style="width: 60px; height: 60px;">
+  <ion-fab>
+    <ion-fab-button>
+      <ion-icon name="arrow-dropright" mode="md"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="start" class="start" (click)="showImage(model.id)">
+      <ion-fab-button>
+        <ion-icon name="images" ></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="top" class="top" (click)="showModel(model.id)">
+      <ion-fab-button>
+        <ion-icon name="cube" ></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="bottom" class="bottom" (click)="showStdModel(model.id)"> 
+      <ion-fab-button>
+        <ion-icon name="body" ></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</div>
+</div>
+<!-- </ion-list> -->

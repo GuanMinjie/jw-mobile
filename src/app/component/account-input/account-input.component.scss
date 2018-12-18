@@ -1,0 +1,28 @@
+.errors {
+    text-align: center;
+    color: red;
+}
+.submit {
+    --height: 30px;
+    --border-radius: 0px;
+    --width: 90%;
+    --background:  rgb(150, 150, 150);
+    --background-activated: rgb(94, 94, 94);
+    --background-focused: rgb(94, 94, 94);
+}
+ion-item {
+    --border-color: rgb(214, 214, 214);
+    --border-radius: 5px;
+    --border-style: solid;
+    --border-width: 1px;
+    height: 40px;
+}
+ion-icon {
+    color: rgb(150, 150, 150);
+}
+
+.btn-getCode {
+    --background:  rgb(150, 150, 150);
+    --background-activated: rgb(94, 94, 94);
+    --background-focused: rgb(94, 94, 94);
+}

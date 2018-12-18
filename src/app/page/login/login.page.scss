@@ -1,0 +1,45 @@
+.action-link {
+    text-align: center;
+    font-size: 10px;
+}
+a {
+    color: rgb(150, 150, 150);
+    font-size: 15px;
+    text-decoration-style: none;
+}
+.logo {
+    height: 100px;
+    text-align: center;
+    display: -webkit-box;
+    -moz-box-align: center;
+    -moz-box-pack: center;
+
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+}
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+.user-input {
+    display: block;
+}
+
+ion-grid {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+ion-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-toolbar {
+    --background: rgb(150, 150, 150);
+}

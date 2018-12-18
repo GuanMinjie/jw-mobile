@@ -1,0 +1,24 @@
+
+<ion-icon name="arrow-round-back" class="back-button" (click)="goback()"></ion-icon>
+<div id="showModel">
+    <ion-spinner  name="circles" *ngIf="loading && showType !== 'image'">
+    </ion-spinner>
+</div>
+<div class="operation" *ngIf="showType === 'stdModel' || showType === 'model' ">
+  <div class="operaty"  *ngIf="!loading" >
+    <ion-range pin="true" min='0' max='1' step="0.05" (ionChange)="changeOpacity($event.detail.value)">
+    </ion-range>
+  </div>
+  <div class="hand" *ngIf="!loading">
+    <ion-icon name="lock" *ngIf="!canInteractor" (click)="toggleInteractor()"></ion-icon>
+    <ion-icon name="unlock" *ngIf="canInteractor" (click)="toggleInteractor()"></ion-icon>
+  </div>
+</div> 
+<div class="current-img operation" *ngIf="showType === 'image'">
+  <p>{{currentImageIndex+1}}/{{countImage}}</p>
+</div>
+<div class="img-operation operation" *ngIf="showType === 'image'">
+  <ion-range pin="true" min=1 max={{countImage}} step="1" (ionChange)="changeImage($event.detail.value)" value={{currentImageIndex+1}}
+    snaps="true">
+  </ion-range>
+</div>

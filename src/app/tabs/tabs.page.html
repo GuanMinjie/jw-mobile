@@ -1,0 +1,23 @@
+<ion-tabs>
+
+  <ion-tab tab="home">
+    <ion-router-outlet name="home"></ion-router-outlet>
+  </ion-tab>
+  <ion-tab tab="contact">
+    <ion-router-outlet name="contact"></ion-router-outlet>
+  </ion-tab>
+
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home" [routerLink]="[{outlets: {home: ['home']}}]">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>模型库</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="contact" [routerLink]="[{outlets: {contact: ['contact']}}]">
+      <ion-icon name="contacts"></ion-icon>
+      <ion-label>个人中心</ion-label>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+
+</ion-tabs>

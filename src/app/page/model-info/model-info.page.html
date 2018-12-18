@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot='start'>
+          <ion-back-button text=''></ion-back-button>
+      </ion-buttons>
+    <ion-title text-center>选择查看类型</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item detail>
+      <ion-card (click)="showImage()">
+        <ion-card-content >
+          CT图像
+        </ion-card-content>
+        <!-- <ion-icon name="images"></ion-icon> -->
+      </ion-card>
+
+    </ion-item>
+    <ion-item detail>
+      <ion-card>
+        <ion-card-content (click)="showModel()" >
+          数据重建模型
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+    <ion-item detail>
+      <ion-card>
+        <ion-card-content (click)="showStdModel()" >
+          标准骨骼模型
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+</ion-content>

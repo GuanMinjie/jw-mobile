@@ -1,0 +1,28 @@
+.link-login {
+    text-align: center;
+    font-size: 10px;
+    color: chocolate;
+    display: block;
+}
+
+
+.input-content {
+    display: block;
+}
+.password:empty::before {
+    content: "请设置密码(最少6位)"
+}
+.password:focus::before {
+    content: none;
+}
+
+ion-grid {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ion-toolbar {
+    --background: rgb(150, 150, 150);
+}

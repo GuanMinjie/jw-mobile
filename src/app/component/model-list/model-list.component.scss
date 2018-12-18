@@ -1,0 +1,25 @@
+$gray-style-button-color: rgb(73, 73, 73);
+
+ion-card {
+    width: 200px;
+    // height: 150px;
+}
+.ios ion-card {
+    height: 150px;
+}
+.item {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fab {
+    width: 60px;
+    height: 60px;
+}
+ion-fab-button {
+    --background: $gray-style-button-color;
+    --background-activated: $gray-style-button-color;
+    --width: 30px;
+    --height: 30px;
+}
