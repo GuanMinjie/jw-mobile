@@ -1,21 +1,23 @@
 $gray-style-button-color: rgb(73, 73, 73);
-
+$background-item-blue: #31415a;;
 ion-card {
-    width: 200px;
-    // height: 150px;
+    width: 215px;
+    --color: rgb(197, 197, 197);
 }
 .ios ion-card {
     height: 150px;
 }
+
 .item {
     height: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #dedede;
+    background-color: $background-item-blue;
+    // background-color: rgb(114, 158, 230)
     border-radius: 10px;
     margin-bottom: 20px;
-
+    color: beige;
 }
 .fab {
     width: 60px;
@@ -26,4 +28,18 @@ ion-fab-button {
     --background-activated: $gray-style-button-color;
     --width: 30px;
     --height: 30px;
+}
+
+ion-icon[name="images"] {
+    color:#375ae2;
+}
+ion-icon[name="cube"] {
+    color: rgb(204, 223, 96);
+}
+ion-icon[name="body"] {
+    color: rgb(87, 152, 163);
+}
+
+ion-card-title {
+    --color: rgb(36, 34, 34);
 }

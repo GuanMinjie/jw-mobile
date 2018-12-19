@@ -1,15 +1,19 @@
+
+$background-blue: rgba(58, 74, 95, 1);
+
 ion-tab-bar{
-    --background: rgb(150, 150, 150);
+    --background: $background-blue;
     
 }
 
 ion-tab-button {
-    --background-selected: rgb(94, 94, 94);
-    --color-selected: rgb(94, 94, 94);
+    // --background-selected: rgb(248, 248, 248);
+    --color-selected: rgb(114, 158, 230);
     // --background: rgb(94, 94, 94)
+    --color:  rgb(92, 115, 167);
 }
 
-ion-icon {
-    color: rgb(94, 94, 94);
-}
+// ion-icon {
+//     color: rgb(72, 94, 139);
+// }
 

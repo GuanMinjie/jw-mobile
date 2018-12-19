@@ -1,4 +1,6 @@
+$background-blue: rgba(58, 74, 95, 1);
+
 ion-toolbar {
-    --background: rgb(49, 53, 62);
+    --background: $background-blue;
     color: azure;
 }

@@ -1,22 +1,37 @@
 
 .avatar {
     width: 100%;
-    height: 150px;
-    background-color: rgba(175, 174, 174, 0.397);
+    height: 200px;
+    background: linear-gradient(rgb(20, 39, 61), rgb(43, 90, 129));
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     // background-image: url("/assets/icon/logo.png")
 }
-
-ion-icon {
-    color: rgb(150, 150, 150);
+.avatar img {
+    border-radius: 50%;
+    background-color: #3b4f67;
+    width: 90px;
+    height: 90px;
+}
+ion-item {
+    --color: #d4dde6;
+}
+ion-icon[name="person"] {
+    color: rgb(54, 51, 216);
+}
+ion-icon[name="cube"] {
+    color: rgb(189, 197, 77);
+}
+ion-icon[name="settings"] {
+    color: rgb(110, 139, 233);
 }
 
-.logout {
-    --background:  rgb(150, 150, 150);
-    --background-activated: rgb(94, 94, 94);
-    --background-focused: rgb(94, 94, 94);
+ion-footer {
+    background-color: #3b4f67;
 }
 
+.btn-logout {
+    --color: #d4dde6;
+}

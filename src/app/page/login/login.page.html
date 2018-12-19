@@ -1,8 +1,8 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar >
     <ion-title text-center>登录</ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
 <!-- <ion-content padding class="content"> -->
   <!-- <ion-text>
@@ -17,11 +17,27 @@
     <a routerLink="/ModifyPassword">忘记密码</a>
   </div> 
 </ion-content> -->
+<div class="container ">
+  <div class="logo">
+      <img src="/assets/icon/logo.png" alt="景维Logo">
+      <!-- <p>景维科技</p>  -->
+  </div>
+  <div class="input">
+      <app-account-input class="user-input" actionName='登录' [isDisplayVerify]="false"></app-account-input>
+  </div>
+  <div class="link">
+      <a routerLink="/register">用户注册</a>
+      <a routerLink="/ModifyPassword">忘记密码</a>
+  </div>
+</div>
 
-<ion-grid>
+<!-- <ion-grid>
   <ion-row >
     <ion-col class="logo">
-      <img src="/assets/icon/logo.png" alt="景维Logo">
+      <div class="logo">
+          <img src="/assets/icon/logo.png" alt="景维Logo">
+          <p>景维科技</p> 
+      </div>
     </ion-col>
   </ion-row>
   <ion-row>
@@ -37,4 +53,4 @@
       <a routerLink="/ModifyPassword">忘记密码</a>
     </ion-col>
   </ion-row>
-</ion-grid>
+</ion-grid> -->

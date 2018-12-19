@@ -18,6 +18,7 @@ export class UserInfoService {
    * @param email 邮箱
    */
   validateEmailUnqi(email: string){
+    console.log(email);
     let options = {params: new HttpParams().set("email", email)};
     return this.http.get(apiConfig.checkEmail, options).pipe(
       retry(3),  //连接失败重试 3次
